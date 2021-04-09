@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sunburn 2021</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<script type="text/javascript">
+	function checkContact(){
+		if(document.getElementById('sameContact').checked){
+			document.getElementById('whatsapp').value=document.getElementById('contact').value;
+		}
+		else
+			document.getElementById('whatsapp').value="";
+		}
+
+		function checkEmail(){
+			if(document.getElementById('email2').value!=document.getElementById('email1').value)
+				alert("The E-mails do not match!");
+				return false;
+		}
+
+</script>
+
+</head>
+<body>
+<header>
+	<nav>
+		<div id="us">About Us</div>
+		<div id="ig">Follow us on Instagram</div>
+	</nav>
+</header>
+
+<section id="pg1">
+		<div id="about">
+		<h1>Sunburn Holi Weekend 2021</h1>
+		<p>It’s time to bring back the festival of colours this year with a bang. Sunburn brings to you “Sunburn Holi Weekend”. Catch VINI VICI and more in Delhi, Bangalore & Goa on 26th, 28th and 29th March 2021 and join the TRIBE. Limited tickets will be live soon. Register now to and get access to the exclusive Pre-sale tickets at a discounted price!</p>
+	</div>
+
+	<!--div id="artist">
+		<h2>Vini Vici</h2>
+		<h3>DJ, MUSIC-PRODUCER</h3>
+		<div id="aboutartist">
+			<div id="artistimg"><img src="https://artists.ultramusicfestival.com/wp-content/uploads/2016/09/vinivici-2020.jpg"></div>
+		<p>Vini Vici is the new project of Aviram Saharai and Matan Kadosh, both well-known and experienced electronic music producers for over a decade.The concept of Vini Vici was formed by the boys with an intention to express their love for the old school sound, paired with their progressive ideas.
+Iboga Records and FM Bookings, widely considered to be the biggest psytrance label and booking agency, were the first to see the potential of the project and invited them to be part of their well respected family, alongside names such as: Ace Ventura, Liquid Soul, Ticon, Captain Hook, Atmos, and the like.</p>
+		</div>
+	</div-->
+	
+	<div id="venues">
+	<div class="venue">
+		<div class="date">26/3</div>
+		<div class="city">DELHI</div>
+	</div>
+	
+	<div class="venue">
+		<div class="date">28/3</div>
+		<div class="city">BENGALURU</div>
+	</div><div class="venue">
+		<div class="date">29/3</div>
+		<div class="city">GOA</div>
+	</div>
+	</div>
+</section>
+
+<section id="pg2">
+	<h2>Register Here</h2>
+	<form>
+		<label>Name:<input type="text" name="name" id="name" required="true"></label></br>
+		<label>Contact Number:<input type="contact" name="Contact" id="contact"  required="true"></label></br>
+		<label><input type="checkbox" name="same" id="sameContact" onclick="checkContact()"> Is your Whatsapp no. same as Contact No.?</label></br>
+		<label>Whatsapp Number:<input type="contact" name="Whatsapp" id="whatsapp"></label></br>
+		<label>House Address:<input type="text" name="Address"></label></br>
+		
+		<label>E-mail Address:<input type="E-mail" name="E-mail" id="email1" required="true"></label><br>
+		<label>Enter E-mail Address again:<input type="E-mail" name="E-mail" id="email2" required="true" onchange="checkEmail()"></label><br>
+		
+		<label>Event:</br>
+			<label><input type="radio" name="event">Delhi 26/3</label><br>
+			<label><input type="radio" name="event">Bengaluru 28/3</label><br>
+			<label><input type="radio" name="event">Goa 29/3</label><br>
+		</label><br>
+
+		<label>Number of Tickets:</br>
+			<label><input type="radio" name="tickets">1</label>
+			<label><input type="radio" name="tickets" >2</label>
+			<label><input type="radio" name="tickets" >3</label>
+			<label><input type="radio" name="tickets">4</label>
+		</label><br>
+		<label> <input type="checkbox" name="age">Are you above 18?</label></br>
+    <label><input type="checkbox" checked="true" name=""> Continue to recieve updates about future events by Sunburn?</label></br>
+    <input type="submit" onclick="return checkEmail()" name="submit" value="Submit">
+	</form>
+</section>
+<footer>
+	&copy Copyright Sunburn 2021 
+</footer>
+</body>
+</html>

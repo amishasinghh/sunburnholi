@@ -1,0 +1,181 @@
+body{
+  font-family: poppins;
+  background-image: linear-gradient(to right top, #332f2f, #000000);
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+}
+
+nav{
+	background: #000000;
+	width: 100%;
+	position: fixed;
+  	display: flex;
+  	color: #c30870;
+  	justify-content: flex-end;
+  	height: 4vh;
+  	box-shadow: -3px 0px 20px #a29b9b;
+  	z-index: 1;
+}
+
+nav div{
+	font-size: 120%;
+	margin: 0 5%;
+	opacity: .9;
+}
+
+nav div:hover{
+	opacity: 1;
+	font-weight: bolder;
+}
+
+#pg1{
+  height: 100vh;
+  position: relative;
+}
+
+#pg1::after{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-image: url(https://wallpapercave.com/wp/wp3634265.jpg);
+	z-index: -10;
+	opacity: .6;
+}
+
+#artistimg img{
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+}
+
+#pg1{
+	display: flex;
+	flex-direction: column;
+}
+
+#pg1 h1{
+	text-align: center;
+	font-size: 350%;
+	opacity: .9;
+}
+
+#about p{
+	margin: 1% 4%;
+	font-size: 150%;
+	text-align: center;
+	opacity: .8;
+}
+
+#aboutartist{
+	display: flex;
+}
+
+#venues{
+	display: flex;
+}
+
+.venue{
+	position: relative;
+	width: 20%;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	height: 38vh;
+	justify-content: center;
+	align-items: center;
+}
+
+.venue::after{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	border-radius: 30px;
+	background-image: linear-gradient(to right bottom,#ffffffd9,#ffffff9e);
+	z-index: -2;
+	opacity: .8;
+}
+
+.venue:hover::after{
+	opacity: 1;
+}
+
+.date{
+	color: #332f2f;
+	opacity: .8;
+	font-size: 200%;
+}
+
+.venue:hover div.city{
+	font-weight: bolder;
+}
+
+.city{
+	color: #c30870;
+	font-size: 250%;
+}
+
+form{
+	color: #ffffffd9;
+	display: flex;
+	flex-direction: column;
+	margin: 0 30%;
+	margin-bottom: 2%;
+}
+
+input[type='text'],[type='contact'],[type='E-mail']{
+	width: 17%;
+	background-image: linear-gradient(to right bottom,rgb(0 0 0 / 30%),rgb(0 0 0 / 70%));
+	position: absolute;
+	right: 400px;
+	border-radius: 10px;
+}
+
+input[type='submit']{
+	font-family: poppins;
+	font-size: 120%;
+	background-color: #c308709e;
+	font-weight: bolder;
+	border-radius: 20px;
+	border: 0;
+	opacity: .8;
+}
+
+input[type='submit']:hover{
+	opacity: 1;
+}
+
+#pg2 h2{
+	font-size: 200%;
+	text-align: center;
+	opacity: .9;
+}
+
+footer{
+	font-size: 80%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #0d0c0c;
+	opacity: .8;
+	height: 20vh;
+}
+
+	
+
+
+
+
+
+
+
+
+
+
+
